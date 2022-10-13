@@ -12,13 +12,10 @@ const tabActive=(event)=>{
 }
 
 
-//cardSwiper
-{/* <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
- var swiper1=new Swiper("#swiper1 .swiper",{
-   
-    slidesPerView:4,
-    navigation:{
-        nextEl:"#swiper1 .swiper-button-next",
-        prevEl:"#swiper1 .swiper-button-prev",
+
+
+   const shiftRight = (event) => {
+    if (event.target.value.length != 0 && event.target.nextElementSibling) {
+      event.target.nextElementSibling.focus();
     }
-   }) */}
+  };
