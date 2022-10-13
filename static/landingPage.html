@@ -678,7 +678,7 @@
         <section class="property-alert show">
             <p class="property-alert__title">New Projects yet to be launched in Greater Noida!</p>
             <p class="property-alert__filterLabel">Try removing any filter</p>
-            <div class="property-alert__filterSec">
+            <div class="property-alert__filterSec" onclick="removeFilter(event)">
                 <button class="property-alert__filterBtn">2, 3 BHK</button>
                 <button class="property-alert__filterBtn">Builder Floor Apartment</button>
                 <button class="property-alert__filterBtn">Greater Noida… +2</button>
@@ -739,7 +739,7 @@
         <section class="verify-num show">
             <p class="verify-num__title">New Projects yet to be launched in Greater Noida!</p>
             <p class="verify-num__filterLabel">Try removing any filter</p>
-            <div class="verify-num__filterSec">
+            <div class="verify-num__filterSec" onclick="removeFilter(event)">
                 <button class="verify-num__filterBtn">2, 3 BHK</button>
                 <button class="verify-num__filterBtn">Builder Floor Apartment</button>
                 <button class="verify-num__filterBtn">Greater Noida… +2</button>
@@ -761,7 +761,7 @@
                 </a>
                 <p class="verify-num__main__tryAgain">Not received the OTP yet? Try again in <span class="verify-num__main__tryAgain verify-num__main__tryAgain--red">15</span> sec</p>
                 <a href="javascript:void(0)">
-                    <button class="verify-num__main__whatsappBtn"> <span class="verify-num__main__whatsappBtn__img"></span> Resend on WhatsApp</button>
+                    <button class="verify-num__main__whatsappBtn disable"> <span class="verify-num__main__whatsappBtn__img"></span> Resend on WhatsApp</button>
                 </a>
                 <a href="javascript:void(0)" class="verify-num__main__resendTxt">Resend on SMS</a>
             </div>
@@ -769,14 +769,14 @@
         <section class="thank-you show">
             <p class="thank-you__title">New Projects yet to be launched in Greater Noida!</p>
             <p class="thank-you__filterLabel">Try removing any filter</p>
-            <div class="thank-you__filterSec">
+            <div class="thank-you__filterSec" onclick="removeFilter(event)">
                 <button class="thank-you__filterBtn">2, 3 BHK</button>
                 <button class="thank-you__filterBtn">Builder Floor Apartment</button>
                 <button class="thank-you__filterBtn">Greater Noida… +2</button>
                 <button class="thank-you__filterBtn">50.8L - 90L</button>
             </div>
             <p class="thank-you__or">OR</p>
-            <button class="thank-you__resetBtn">Reset Filters</button>
+            <button class="thank-you__resetBtn" onclick="removeAllFilters(event)">Reset Filters</button>
             <div class="thank-you__main">
                 <div class="thank-you__main__tick-icon"></div>
                 <p class="thank-you__main__title">Thank You!!</p>

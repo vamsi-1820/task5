@@ -1419,6 +1419,12 @@ body{
                 background-image: url(../Images/icon-24-whatsapp.webp);
                 background-size: cover;
             }
+            &.disable{
+                pointer-events: none;
+                background-color: $gray-e8e8e8;
+                border-color: $gray-e8e8e8;
+                opacity: 0.5;
+            }
         }
         &__resendTxt{
             position: relative;
