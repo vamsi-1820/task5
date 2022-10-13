@@ -11,11 +11,12 @@ const tabActive=(event)=>{
     event.target.classList.add("active");
 }
 
+const shiftRight = (event) => {
+  if (event.target.value.length != 0 && event.target.nextElementSibling) {
+    event.target.nextElementSibling.focus();
+  }
+};
 
-
-
-   const shiftRight = (event) => {
-    if (event.target.value.length != 0 && event.target.nextElementSibling) {
-      event.target.nextElementSibling.focus();
-    }
-  };
+const removeFilter = (event) => {
+  event.target.remove();
+};
